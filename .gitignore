@@ -1,0 +1,25 @@
+# Ignore all audio files
+*.mp3
+*.wav
+*.ogg
+*.m4a
+*.flac
+# ... y cualquier otra extensión de audio que desees ignorar
+
+# Ignore Python bytecode directories
+__pycache__/
+
+# Ignore log files
+*.log
+
+# Ignore Excel files
+*.xls
+*.xlsx
+
+# Ignore Word documents
+*.doc
+*.docx
+*.jpg
+*.png
+*.eps
+*.txt

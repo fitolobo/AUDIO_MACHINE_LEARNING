@@ -1,0 +1,237 @@
+%\documentclass[10pt,a4paper]{report}
+\documentclass{exam}
+%encoding
+%--------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%--------------------------------------
+ 
+%Portuguese-specific commands
+%--------------------------------------
+\usepackage[portuguese]{babel}
+%---------------------------------
+\usepackage{graphicx}
+\usepackage{comment}
+\usepackage{exercise}
+\usepackage{enumerate}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[shortlabels]{enumitem}
+\usepackage{algorithmic}
+\usepackage[ruled,vlined]{algorithm2e}
+
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usepackage{graphicx}
+\usetikzlibrary{%
+    decorations.pathreplacing,%
+    decorations.pathmorphing%
+}
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{theorem}{Theorem}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+\theoremstyle{definition}
+\newtheorem{example}{Example}
+\newtheorem{remark}{Observações}
+
+\newcommand\x{\times}
+\newcommand\bigzero{\makebox(0,0){\text{\huge0}}}
+\newcommand*{\bord}{\multicolumn{1}{c|}{}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage[dvipsnames]{xcolor}
+%\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Otra opcion de colores:
+%\newcommand\myshade{85}
+%\colorlet{mylinkcolor}{violet}
+%\colorlet{mycitecolor}{YellowOrange}
+%\colorlet{myurlcolor}{Aquamarine}
+%\usepackage{hyperref}
+%\hypersetup{
+%  linkcolor  = mylinkcolor!\myshade!black,
+%  citecolor  = mycitecolor!\myshade!black,
+%  urlcolor   = myurlcolor!\myshade!black,
+%  colorlinks = true,
+%}
+
+\usepackage{hyperref}
+\usepackage{cleveref}
+\hypersetup{
+  linkcolor  = blue,
+  citecolor  = blue,
+  urlcolor   = blue,
+  colorlinks = true,
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{mathtools}
+\usepackage[numbered,framed]{matlab-prettifier}
+\usepackage{filecontents}
+
+\newcommand{\vetx}{\mathbf{x}}
+%\newcommand{\cos}{\text{cos}}
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
+
+\usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
+\lstset{
+    language=Octave, %% Troque para PHP, C, Java, etc... bash é o padrão
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this 
+    numbers=left,
+    backgroundcolor=\color{gray!10},
+    frame=single,
+    tabsize=2,
+    rulecolor=\color{black!30},
+    title=\lstname,
+    escapeinside={\%*}{*)},
+    breaklines=true,
+    breakatwhitespace=true,
+    framextopmargin=2pt,
+    framexbottommargin=2pt,
+    extendedchars=false,
+    inputencoding=utf8
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+\usepackage{listings}
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+language=Python,
+basicstyle=\ttm,
+otherkeywords={self},             % Add keywords here
+keywordstyle=\ttb\color{deepblue},
+emph={MyClass,__init__},          % Custom highlighting
+emphstyle=\ttb\color{deepred},    % Custom highlighting style
+stringstyle=\color{deepgreen},
+frame=tb,                         % Any extra options here
+showstringspaces=false            % 
+}}
+
+
+% Python environment
+\lstnewenvironment{python}[1][]
+{
+\pythonstyle
+\lstset{#1}
+}
+{}
+
+% Python for external files
+\newcommand\pythonexternal[2][]{{
+\pythonstyle
+\lstinputlisting[#1]{#2}}}
+
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\oddsidemargin = 8pt
+\title{Mini Quiz 2: Conceptos Básicos y Notación.}
+\author{Profesor: Rodolfo Anibal Lobo}
+\date{Septiembre 2023}
+
+\begin{document}
+\maketitle
+
+%\begin{table}[h!]
+%\centering
+%\begin{tabular}{|l|l|l|l|l|l|l|}
+%\hline
+% Pregunta & $(1)$ & $(2)$ & $(3)$ & $(4)$  & $(5)$ & Total \\ \hline
+% Q1 & $\times$  &$\times$   & $\times$   & $\times$ & $\times$ & $\mathtt{5pts}$  \\ \hline
+% Q2 & $\times$ & $\times$  & $\times$   & $\times$   & $\times$  & $\mathtt{5pts}$  \\ \hline
+%\end{tabular}
+%\end{table}
+
+
+\section*{Instrucciones}
+\thispagestyle{empty}
+Lea atentamente las preguntas y conteste de manera breve y clara sus respuestas. Recuerde que en negrita expresamos vectores $\mathbf{x}$ fila o coulmna, en cursiva y con sub-indices $x_i$ componentes o escalares, donde $i\in \mathbb{Z}^{+}$, en algunos casos letras mayúsculas pueden representar indistintamente vectores o matrices.
+
+\begin{enumerate}
+\item Supongamos que tenemos un pokedex programado en $\mathtt{python}$ ,¿Cuáles serían los 3 pasos para poder consultar por Onix?. La clase utilizada para crear el pokedex es la siguiente:
+
+    \begin{python}
+import requests 
+class Pokedex:
+    def __init__(self):
+        # Variables que utilizaremos dentro de toda la clase
+        self.base_url = "https://pokeapi.co/api/v2/pokemon/{}"
+        self.name = None
+        self.type = None
+        self.attack = None
+    def search(self, name: str):
+        # Dando formato al nombre del pokemon en la URL
+        self.name = name.lower()
+        url = self.base_url.format(self.name)
+        # Manejo de excepciones: intento preguntarle a la API
+        try:
+            response = requests.get(url)
+        except: 
+            print("Algo extrano ocurrio")
+        # Observando la respuesta de la API
+        if response.status_code == 200:
+            data = response.json()
+            self.type = data['types'][0]['type']['name']
+            self.attack = data['moves'][0]['move']['name']
+        else:
+            print(f"No pudimos encontrar datos para {self.name}")
+    # Pantalla del pokedex
+    def mostrar_informacion(self):
+        print(f"Nombre: {self.name}")
+        print(f"Tipo: {self.type}")
+        print(f"Ataque: {self.attack}")     
+    \end{python}
+
+    \item Defina qué es la tasa de aprendizaje o \textit{learning rate}.
+    \item Dadas las siguientes ecuaciones normales:
+    \begin{equation}
+      \Theta = (X^{T}X)^{-1}X^{T}\mathbf{y}
+    \end{equation}
+    Si $\mathbf{x} \in \mathbb{R}^{1\times N}$ es una fila de la matriz $X$, es decir $\mathbf{x}=[x_1,x_2,\dots,x_N]$ nuestros datos, para los cuales tenemos 250 ejemplos. Además sea $\theta\in \mathbb{R}^{6\times 1}$ e $y_i \in \mathbb{R}$. ¿Cuáles son las dimensiones de las siguientes matrices-vectores?
+    \begin{enumerate}
+        \item $X^{T}$
+        \item $X^{T}X$
+        \item $(X^{T}X)^{-1}$
+        \item $X^{T}\mathbf{y}$
+        \item $\mathbf{x}$
+        \item $(X^{T}X)^{-1}X^{T}$
+        \item $\mathbf{y}$
+    \end{enumerate}
+\end{enumerate}
+\end{document}

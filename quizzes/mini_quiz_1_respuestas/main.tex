@@ -1,0 +1,217 @@
+%\documentclass[10pt,a4paper]{report}
+\documentclass{exam}
+%encoding
+%--------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%--------------------------------------
+ 
+%Portuguese-specific commands
+%--------------------------------------
+\usepackage[portuguese]{babel}
+%---------------------------------
+\usepackage{graphicx}
+\usepackage{comment}
+\usepackage{exercise}
+\usepackage{enumerate}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[shortlabels]{enumitem}
+\usepackage{algorithmic}
+\usepackage[ruled,vlined]{algorithm2e}
+
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usepackage{graphicx}
+\usetikzlibrary{%
+    decorations.pathreplacing,%
+    decorations.pathmorphing%
+}
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{theorem}{Theorem}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+\theoremstyle{definition}
+\newtheorem{example}{Example}
+\newtheorem{remark}{Observações}
+
+\newcommand\x{\times}
+\newcommand\bigzero{\makebox(0,0){\text{\huge0}}}
+\newcommand*{\bord}{\multicolumn{1}{c|}{}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage[dvipsnames]{xcolor}
+%\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Otra opcion de colores:
+%\newcommand\myshade{85}
+%\colorlet{mylinkcolor}{violet}
+%\colorlet{mycitecolor}{YellowOrange}
+%\colorlet{myurlcolor}{Aquamarine}
+%\usepackage{hyperref}
+%\hypersetup{
+%  linkcolor  = mylinkcolor!\myshade!black,
+%  citecolor  = mycitecolor!\myshade!black,
+%  urlcolor   = myurlcolor!\myshade!black,
+%  colorlinks = true,
+%}
+
+\usepackage{hyperref}
+\usepackage{cleveref}
+\hypersetup{
+  linkcolor  = blue,
+  citecolor  = blue,
+  urlcolor   = blue,
+  colorlinks = true,
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{mathtools}
+\usepackage[numbered,framed]{matlab-prettifier}
+\usepackage{filecontents}
+
+\newcommand{\vetx}{\mathbf{x}}
+%\newcommand{\cos}{\text{cos}}
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
+
+\usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
+\lstset{
+    language=Octave, %% Troque para PHP, C, Java, etc... bash é o padrão
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this 
+    numbers=left,
+    backgroundcolor=\color{gray!10},
+    frame=single,
+    tabsize=2,
+    rulecolor=\color{black!30},
+    title=\lstname,
+    escapeinside={\%*}{*)},
+    breaklines=true,
+    breakatwhitespace=true,
+    framextopmargin=2pt,
+    framexbottommargin=2pt,
+    extendedchars=false,
+    inputencoding=utf8
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+\usepackage{listings}
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+language=Python,
+basicstyle=\ttm,
+otherkeywords={self},             % Add keywords here
+keywordstyle=\ttb\color{deepblue},
+emph={MyClass,__init__},          % Custom highlighting
+emphstyle=\ttb\color{deepred},    % Custom highlighting style
+stringstyle=\color{deepgreen},
+frame=tb,                         % Any extra options here
+showstringspaces=false            % 
+}}
+
+
+% Python environment
+\lstnewenvironment{python}[1][]
+{
+\pythonstyle
+\lstset{#1}
+}
+{}
+
+% Python for external files
+\newcommand\pythonexternal[2][]{{
+\pythonstyle
+\lstinputlisting[#1]{#2}}}
+
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\oddsidemargin = 8pt
+\title{Mini Quiz 1: Historia y primeras definiciones.}
+\author{Profesor: Rodolfo Anibal Lobo}
+\date{Septiembre 2023}
+
+\begin{document}
+\maketitle
+
+%\begin{table}[h!]
+%\centering
+%\begin{tabular}{|l|l|l|l|l|l|l|}
+%\hline
+% Pregunta & $(1)$ & $(2)$ & $(3)$ & $(4)$  & $(5)$ & Total \\ \hline
+% Q1 & $\times$  &$\times$   & $\times$   & $\times$ & $\times$ & $\mathtt{5pts}$  \\ \hline
+% Q2 & $\times$ & $\times$  & $\times$   & $\times$   & $\times$  & $\mathtt{5pts}$  \\ \hline
+%\end{tabular}
+%\end{table}
+
+
+\section*{Instrucciones}
+\thispagestyle{empty}
+Lea atentamente las preguntas y conteste de manera breve y clara sus respuestas. Se utilizarán los primeros 10 minutos de la clase como máximo para realizar esta tarea. \textbf{Debe elegir una pregunta y contestarla.}
+
+\begin{enumerate}
+    \item ¿Cuál es la definición de Machine Learning dada por Arthur Samuel (1950)?. Luego, mencione y expliqué en términos generales las otras dos descripciones vistas en clases.
+    \begin{enumerate}
+    \item \textcolor{cyan}{The field of study that gives computers the ability to learn without explicitly being programmed. El campo de estudio que da a las computadoras la habilidad de aprender sin ser explícitamente programadas.} \textcolor{black}{}
+    \end{enumerate}
+    \item Defina aprendizaje supervisado y no supervisado. De un ejemplo de uso en cada caso. 
+    \begin{enumerate}
+    \item \textcolor{cyan}{\textbf{Aprendizaje Supervisado}: Dado un conjunto de datos de entrada con sus correspondientes etiquetas, que podemos considerar como respuestas correctas, queremos entrenar un modelo capaz de predecir tales etiquetas y que tenga la capacidad de generalizar sus respuestas ante nuevas entradas. \textit{Ejemplos de uso}: clasificación, regresión, traducción, detector de spam, clasificación de sonidos, clasificación de emociones etc.}\textcolor{black}{}
+    \item \textcolor{cyan}{\textbf{Aprendizaje no supervisado}: a diferencia del aprendizaje supervisado, el aprendizaje no supervisado no utiliza etiquetas o respuestas correctas y solo basado en la estructura de los datos permite agruparlos en "clusters" o nubes de datos similares, también podríamos decir "estructuras" similares. \textit{Ejemplos de uso}: reducción de dimensión, clustering y asociación. }\textcolor{black}{}
+    \end{enumerate}
+    \item ¿Cuando trabajamos en $\mathtt{python}$, qué tipos de estructuras de datos podemos encontrar? (Nombre dos y sus características. Si no recuerda alguna característica en particular y recuerda el código, escriba un código simple y describa que es lo que hace y el resultado que entregaría).
+    \begin{enumerate}
+    \item \textcolor{cyan}{\textbf{Listas}: lista de objetos, pueden ser números, strings, funciones etc. Puede mezclar tipo de objetos. Podemos acceder a estos objetos a través de indices enteros.} 
+    \begin{python}
+        # lista vacia (la palabra "list" es reservada)
+        lista = []
+        lista.append(1)
+        lista.append("hola")
+        print(lista[0])
+        1
+        print(lista[1])
+        "hola"
+    \end{python}
+    \textcolor{cyan}{
+    tienen asociados varios métodos más a parte de $\mathtt{append}$ para más detalles revisar \href{https://docs.python.org/3/tutorial/datastructures.html}{LINK}. }\textcolor{black}{}
+    \item \textcolor{cyan}{\textbf{Diccionarios}: Consisten en una asociación llave-valor que permite almacenar, eliminar información respecto a una llave, tal y como una pequeña "memoria". Las llaves son valores únicos e inmutables. Para más información sobre mutabilidad} \href{https://realpython.com/python-mutable-vs-immutable-types/#:~:text=Python%20has%20both%20mutable%20and,you%20as%20a%20Python%20developer.}{LINK}
+    \item \textcolor{cyan}{\textbf{Strings}: Secuencias de caracteres individuales. Cada caracter es indexado. Es posible aplicar diferentes métodos a strings como por ejemplo} $\mathtt{.lower()}$ \textcolor{cyan}{que deja todas las letras en minúscula (lowercase).}
+    \item \textcolor{cyan}{\textbf{Vectores}: A través de la librería $\mathtt{numpy}$ es posible crear vectores que se rigen bajo las leyes del álgebra lineal. Estas estructuras pueden operarse (suma, resta, producto punto etc). }
+    \item \textcolor{cyan}{\textbf{Conjuntos}: Al igual que en teoría de conjuntos, puedes unir, intersectar y aplicar operaciones de conjuntos en estos objetos que simulan un conjunto clásico.} 
+    \end{enumerate}
+\end{enumerate}
+\end{document}
