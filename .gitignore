@@ -23,4 +23,4 @@ __pycache__/
 *.png
 *.eps
 *.txt
-*.DS_Store
+.DS_Store
