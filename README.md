@@ -37,3 +37,11 @@ ISBN 10: 0131471392 ISBN 13: 9780131471399.
 
 - PhD Keun WooChoi: https://github.com/keunwoochoi/dl4mir
 
+- PhD Joshua Starmer: https://statquest.org
+
+# Reference databases
+
+1 - [RAVDESS](https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio)
+2 - [Covid-19](https://www.kaggle.com/datasets/andrewmvd/covid19-cough-audio-classification)
+3 - [Music Genre](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification)
+4 - [Free-Spoken-Digit-Dataset](https://www.kaggle.com/datasets/joserzapata/free-spoken-digit-dataset-fsdd?rvi=1)
