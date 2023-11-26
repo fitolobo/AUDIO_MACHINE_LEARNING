@@ -4,6 +4,7 @@
 *.ogg
 *.m4a
 *.flac
+*.mid
 # ... y cualquier otra extensión de audio que desees ignorar
 
 # Ignore Python bytecode directories
@@ -23,4 +24,5 @@ __pycache__/
 *.png
 *.eps
 *.txt
+*.zip
 .DS_Store
