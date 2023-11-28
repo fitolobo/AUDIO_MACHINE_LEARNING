@@ -43,7 +43,7 @@ ISBN 10: 0131471392 ISBN 13: 9780131471399.
 
 - PhD Joshua Starmer: https://statquest.org
 
-- PhD Marcos E. Valle (Actividad 1): [Link](https://www.ime.unicamp.br/~valle/)
+- PhD Marcos E. Valle (Desafio 1): [Link](https://www.ime.unicamp.br/~valle/)
 
 - [Dive into Deep Learning](https://d2l.ai/index.html)
 
@@ -57,4 +57,4 @@ ISBN 10: 0131471392 ISBN 13: 9780131471399.
 
 4 - [Free-Spoken-Digit-Dataset](https://www.kaggle.com/datasets/joserzapata/free-spoken-digit-dataset-fsdd?rvi=1)
 
-5 - [Karnika Kapoor Blog](https://karnikakapoor.blogspot.com/)
+5 - [Karnika Kapoor Audio Generation](https://www.kaggle.com/code/karnikakapoor/music-generation-lstm)
