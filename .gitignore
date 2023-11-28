@@ -22,6 +22,7 @@ __pycache__/
 *.docx
 *.jpg
 *.png
+!dall_e_image.png
 *.eps
 *.txt
 *.zip
