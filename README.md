@@ -58,3 +58,5 @@ ISBN 10: 0131471392 ISBN 13: 9780131471399.
 4 - [Free-Spoken-Digit-Dataset](https://www.kaggle.com/datasets/joserzapata/free-spoken-digit-dataset-fsdd?rvi=1)
 
 5 - [Karnika Kapoor Audio Generation](https://www.kaggle.com/code/karnikakapoor/music-generation-lstm)
+
+6 - [The Independent Code](https://www.youtube.com/watch?v=Lakz2MoHy6o)
