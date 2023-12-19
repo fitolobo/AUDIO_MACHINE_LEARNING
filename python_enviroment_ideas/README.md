@@ -224,10 +224,12 @@ Referencia (Sección set up shell enviroment): [Link](https://github.com/pyenv/p
 
 6 - Reinicia la terminal ```exec zsh -l``` Si tienes otro tipo de terminal revisa las opciones aquí [Link](https://stackoverflow.com/questions/57262349/restart-terminal-without-closing-on-macos)
 
-7 - Ahora cada vez que entres al directorio se activará el ambiente virtual automáticamente. 
+7 - Activa el ambiente a través de ```pyenv activate <environment_name>```
 
-8 - Ahora solo deberás instalar via ```pip install <nombre de la libreria>``` las cosas que necesites. 
+8 - Ahora cada vez que entres al directorio se activará el ambiente virtual automáticamente. 
 
-9 - Para guardar en un archivo ```requierements.txt``` todas las depencias que has instalad debes ejectuar ```pip freeze > requirements.txt```
+9 - Ahora solo deberás instalar via ```pip install <nombre de la libreria>``` las cosas que necesites. 
+
+10 - Para guardar en un archivo ```requierements.txt``` todas las depencias que has instalad debes ejectuar ```pip freeze > requirements.txt```
 
 Ahora es posible instalar de manera más simple  ```pip install git+https://github.com/openai/whisper.git ```
